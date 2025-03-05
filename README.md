@@ -118,7 +118,7 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
 1. Once the VM is set up and Ollama is running, SSH into your VM.
 2. Navigate to your project directory:
    ```bash
-   cd /path/to/your/project
+   cd /path/to/your/project/studious-invention
    ```
 3. Run the Streamlit app:
    ```bash
