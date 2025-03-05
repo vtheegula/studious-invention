@@ -128,7 +128,7 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
    Note: The console will show the port#
 
 
-## Testing and Using Your Application
+## Testing and Using Application
 1. Access your web application by navigating to your VM's external IP address in a web browser
 2. Upload a CSV file containing your data
 3. Once the data is displayed in the grid, click the "Analyze with AI" button
