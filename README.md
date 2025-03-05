@@ -1,4 +1,4 @@
-```markdown
+
 # Project Setup Guide
 
 This guide walks you through setting up the environment to run the application, including configuring a Google Cloud VM, installing Docker, and setting up Ollama with DeepSeek.
