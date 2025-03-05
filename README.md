@@ -113,6 +113,23 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
 3. Click **Create**.
 4. Go back to your VM instance and add the network tag `ollama-server`.
 
+
+## Testing and Using Your Application
+1. Access your web application by navigating to your VM's external IP address in a web browser
+2. Upload a CSV file containing your data
+3. Once the data is displayed in the grid, click the "Analyze with AI" button
+4. DeepSeek will process the data and return an analysis
+5. You can ask follow-up questions in the chat interface below the analysis
+
+
+## Troubleshooting
+1. If Ollama is not responding:
+sudo systemctl restart ollama
+
+2. If you need to restart the services:
+sudo systemctl restart ollama-webapp
+
+
 ## Additional Notes
 - If you face any issues with port conflicts or the `ollama serve` command, verify that no other service is using port 11434.
 - For security, restrict the source IP range to your own IP instead of using `0.0.0.0/0`.
