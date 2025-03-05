@@ -1,6 +1,6 @@
 # Project Setup Guide
 
-This guide walks you through setting up the environment to run the application, including configuring a Google Cloud VM, installing Docker, and setting up Ollama with DeepSeek.
+This guide walks you through setting up the environment to run the application, including configuring a Google Cloud VM, installing Docker, and setting up Ollama with DeepSeek-r1:8b.
 
 ## Prerequisites
 Before starting, ensure you have:
@@ -57,7 +57,7 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
    ```
    Note: If you get an error that the address is already in use, Ollama may already be running as a service
 
-4. Try pulling a specific version:
+4. Pull DeepSeek-r1:8b
    ```bash
    ollama pull deepseek-r1:8b
    ```
@@ -93,8 +93,7 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
    ```bash
    sudo systemctl daemon-reload
    sudo systemctl enable ollama
-   sudo systemctl start ollama
-   sudo ollama run deepseek-r1:8b
+   sudo systemctl start ollama   
    ```
 
 4. Run the DeepSeek-R1 8B model locally on your machine using Ollama:
