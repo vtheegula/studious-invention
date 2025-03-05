@@ -114,6 +114,20 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
 4. Go back to your VM instance and add the network tag `ollama-server`.
 
 
+## Run the Web App
+1. Once the VM is set up and Ollama is running, SSH into your VM.
+2. Navigate to your project directory:
+   ```bash
+   cd /path/to/your/project
+   ```
+3. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+4. Access the app in your browser at http://<your-vm-ip>:port#
+   Note: The console will show the port#
+
+
 ## Testing and Using Your Application
 1. Access your web application by navigating to your VM's external IP address in a web browser
 2. Upload a CSV file containing your data
