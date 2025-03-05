@@ -124,11 +124,14 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
 
 ## Troubleshooting
 1. If Ollama is not responding:
+```bash
 sudo systemctl restart ollama
+```
 
 2. If you need to restart the services:
+```bash
 sudo systemctl restart ollama-webapp
-
+```
 
 ## Additional Notes
 - If you face any issues with port conflicts or the `ollama serve` command, verify that no other service is using port 11434.
