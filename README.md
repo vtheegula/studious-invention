@@ -97,6 +97,11 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
    sudo ollama run deepseek-r1:8b
    ```
 
+4. Run the DeepSeek-R1 8B model locally on your machine using Ollama:
+   ```bash   
+   sudo ollama run deepseek-r1:8b
+   ```
+
 ## Firewall Rules Configuration
 1. Go to **Google Cloud Console > VPC Network > Firewall**, click **Create Firewall Rule**.
 2. Configure the rule:
