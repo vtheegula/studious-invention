@@ -55,6 +55,7 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
    ```bash
    ollama serve
    ```
+   Note: If you get an error that the address is already in use, Ollama may already be running as a service
 
 4. Try pulling a specific version:
    ```bash
