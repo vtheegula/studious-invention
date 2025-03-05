@@ -1,4 +1,3 @@
-
 # Project Setup Guide
 
 This guide walks you through setting up the environment to run the application, including configuring a Google Cloud VM, installing Docker, and setting up Ollama with DeepSeek.
@@ -57,14 +56,9 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
    ollama serve
    ```
 
-4. Check available DeepSeek models:
+4. Try pulling a specific version:
    ```bash
-   ollama list -a | grep deepseek
-   ```
-
-   If no DeepSeek models are found, try pulling a specific version:
-   ```bash
-   ollama pull deepseek:7b
+   ollama pull deepseek-r1:8b
    ```
 
 ## Configure Ollama API for External Connections
@@ -99,6 +93,7 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
    sudo systemctl daemon-reload
    sudo systemctl enable ollama
    sudo systemctl start ollama
+   sudo ollama run deepseek-r1:8b
    ```
 
 ## Firewall Rules Configuration
@@ -116,7 +111,3 @@ Follow these steps to configure a Google Cloud VM for hosting the application. T
 ## Additional Notes
 - If you face any issues with port conflicts or the `ollama serve` command, verify that no other service is using port 11434.
 - For security, restrict the source IP range to your own IP instead of using `0.0.0.0/0`.
-
-```
-
-This version provides more guidance, includes troubleshooting sections, and offers additional clarity.
